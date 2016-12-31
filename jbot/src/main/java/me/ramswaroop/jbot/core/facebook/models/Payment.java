@@ -61,6 +61,7 @@ public class Payment {
 
 }
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 class PaymentCredential {
 
     private String providerType;
@@ -84,6 +85,7 @@ class PaymentCredential {
     
 }
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 class Amount {
 
     private String currency;
